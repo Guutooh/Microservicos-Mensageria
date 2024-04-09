@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eurekaserver
+  security:
+    basic:
+      enable: true
+    user:
+      name: eureka-user
+      password: eureka-user
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    on-demand-update-status-change: off #Serve para caso não queira ver as instancias caidas.
